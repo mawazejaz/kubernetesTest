@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 as build-env
 WORKDIR /src
 COPY src/*.csproj .
 RUN dotnet restore
